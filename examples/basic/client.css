@@ -1,0 +1,22 @@
+html, body {
+    min-width: 200vw;
+    min-height: 200vh;
+    font-family: monospace;
+    white-space: pre;
+}
+
+body::before {
+    position: fixed;
+    transform: translate(calc(var(--pointer-client-x, 0) * 1px), calc(var(--pointer-client-y, 0) * 1px));
+    will-change: transform;
+    counter-reset: pointer-client-x var(--pointer-client-x) pointer-client-y var(--pointer-client-y);
+    content: "Client: " counter(pointer-client-x) "," counter(pointer-client-y);
+}
+
+body::after {
+    position: absolute;
+    transform: translate(calc(var(--pointer-page-x, 0) * 1px), calc(var(--pointer-page-y, 0) * 1px + 100%));
+    will-change: transform;
+    counter-reset: pointer-page-x var(--pointer-page-x) pointer-page-y var(--pointer-page-y);
+    content: "Page:   " counter(pointer-page-x) "," counter(pointer-page-y);
+}

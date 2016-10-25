@@ -1,0 +1,12 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "private": true,
+  "main": "client.js",
+  "scripts": {
+    "start": "budo client.js --css client.css -p 8080"
+  },
+  "dependencies": {
+    "budo": "^9.2.1"
+  }
+}
