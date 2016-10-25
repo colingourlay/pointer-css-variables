@@ -2,7 +2,6 @@ html, body {
     min-width: 200vw;
     min-height: 200vh;
     font-family: monospace;
-    white-space: pre;
 }
 
 body::before {

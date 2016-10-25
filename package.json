@@ -1,7 +1,7 @@
 {
   "name": "pointer-css-variables",
   "version": "1.0.0",
-  "description": "",
+  "description": "Use the current position of pointing devices as global CSS variables",
   "main": "index.js",
   "author": "Colin Gourlay <colin@colin-gourlay.com>",
   "license": "ISC"
