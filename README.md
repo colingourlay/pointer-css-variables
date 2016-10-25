@@ -22,7 +22,7 @@ When moving the mouse or a single finger, you'll get the abstracted variables:
 
 ```css
 --pointer-client-x
---pointerclient-y
+--pointer-client-y
 --pointer-page-x
 --pointer-page-y
 --pointer-screen-x
